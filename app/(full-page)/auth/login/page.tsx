@@ -20,7 +20,7 @@ const Login: Page = () => {
 
     const handleGoogleLogin = () => {
         // Redirect to Django's Google OAuth URL
-        window.location.href = 'http://localhost:8000/accounts/google/login/';
+        signIn('google');
     }
     const handleLogin = async () => {
         // Prepare the authorization header using the email and password
